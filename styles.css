@@ -1,0 +1,347 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e2e;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; Hide scrollbars */
+    position: relative;
+}
+
+/* Container for Sidebar and Main Content */
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Prevents overflow issues */
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    background-color: #1e1e2e;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    text-align: left;
+}
+
+.nav-links li {
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: flex; /* Change to flex to align items */
+    align-items: center; /* Vertically centers items */
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-links a i {
+    color: #ff637d; /* Set your desired icon color */
+    margin-right: 10px; /* Adds space between the icon and the text */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Change icon color on hover */
+.nav-links a:hover i {
+    color: #fff; /* Change to white or any color when hovered */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 3px solid #ff637d;
+}
+
+
+.sidebar-copyright {
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: auto;  /* Push copyright to the bottom */
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #282c34;
+    overflow-y: auto;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 210px;
+    border-radius: 50%;
+    border: 4px solid #ff637d;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: #ff637d;
+    margin-bottom: 20px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #fff; /* White icons */
+    font-size: 1.5rem; /* Icon size */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff637d; /* Change to accent color on hover */
+}
+
+.social-links i {
+    font-size: 1.5rem; /* Icon size */
+}
+
+
+/* About Section */
+#about {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+    background-color: #282c34;
+    padding: 10px 0;
+    z-index: 10;
+}
+
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 40px;
+}
+
+.skills-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #ff637d;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #ff4c6e;
+}
+
+
+/* Projects List Styling */
+
+
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    max-height: 70vh; /* Limit height for scrolling */
+    padding-right: 10px; /* Space for scrollbar */
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: #ff6b6b;
+    border-radius: 10px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: #2d2d44;
+}
+
+.project-card {
+    border: 2px solid #ff637d;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    position: relative;
+    background-color: #282c34;
+    color: #fff;
+    width: 90%; /* Adjust as per layout */
+}
+
+
+.project-card h3 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.project-card p {
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #282c34;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #ff637d;
+    position: absolute;
+    right: 20px;  /* Align to the right */
+    bottom: 25px; /* Align to the bottom */
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #ff637d;
+    color: #282c34;
+}
+
+/* Stats */
+
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
+}
+
+.stat-item {
+    text-align: center;
+    margin: 0 10px; /* Add horizontal margin to each stat item */
+}
+
+.stat-item h3 {
+    font-size: 2.0em;
+    color: #ff637d;
+}
+
+.stat-item p {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.mobile-nav {
+    display: none; 
+}
+
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Hide the sidebar on mobile */
+    }
+
+    .mobile-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #1e1e2e;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 1000; /* Ensure it's on top */
+    }
+
+    .mobile-nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .mobile-nav-links li {
+        flex: 1; /* Evenly space out the items */
+        text-align: center;
+    }
+
+    .mobile-nav-links a {
+        color: #ffffff;
+        font-size: 1.5rem; /* Increase icon size */
+    }
+
+    .logo {
+        display: none; /* Hide logo on mobile */
+    }
+
+    .sidebar-copyright {
+        display: none; /* Optionally hide copyright on mobile */
+    }
+}
