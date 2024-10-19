@@ -398,4 +398,89 @@ h1 {
     .stat-item p {
         font-size: 0.9rem;
     }
+
+    /* Section titles */
+    .section-title {
+        font-size: 1.8rem;
+        text-align: center; /* Center align the section titles */
+        margin-bottom: 20px;
+    }
+
+    /* Intro text adjustments */
+    .intro-text {
+        font-size: 1rem; /* Slightly smaller font for mobile */
+        line-height: 1.6; /* Increase line height for readability */
+        text-align: justify; /* Better readability */
+        margin-bottom: 20px; /* Add space below intro text */
+    }
+
+    /* Skills section adjustments */
+    .skills-section {
+        margin-bottom: 20px;
+    }
+
+    /* Skill category headings */
+    .skills-section h3 {
+        font-size: 1.4rem; /* Slightly smaller headings */
+        margin-bottom: 10px;
+        text-align: center; /* Center skill section headings */
+    }
+
+    /* Skill tags container */
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the skills */
+        gap: 10px; /* Add spacing between skills */
+        margin-bottom: 20px;
+    }
+
+    /* Individual skill tag styling */
+    .skill {
+        font-size: 0.9rem; /* Slightly smaller text for skills */
+        padding: 8px 12px; /* Adjust padding for mobile */
+        background-color: #ff637d; /* Light background for skill tags */
+        border-radius: 20px; /* Rounded corners */
+        display: inline-block;
+        margin: 5px;
+    }
+
+    /* Adjust the last skill group (AI, Machine Learning, etc.) */
+    .skills-section span.skill {
+        font-size: 0.9rem;
+    }
+
+    /* Ensure proper spacing between sections */
+    section {
+        margin-bottom: 30px;
+    }
+
+    /* Adjust the project grid layout for mobile */
+    .project-grid {
+        display: flex;
+        flex-direction: column; /* Stack the project cards vertically */
+        gap: 20px; /* Add space between cards */
+    }
+
+    /* Project card styling */
+    .project-card .github-button {
+        float: right; /* Align the button to the right */
+        margin-top: -10px; /* Slight adjustment to ensure vertical alignment */
+        padding: 8px 12px; /* Compact padding for the button */
+        font-size: 0.875rem; /* Slightly smaller font size for mobile */
+        border-radius: 5px; /* Rounded corners for the button */
+    }
+
+    /* Ensure the project description text stays clear of the floated button */
+    .project-card p {
+        margin-right: 110px; /* Add margin to the right to avoid overlap with the button */
+        display: inline-block; /* Ensure the text flows correctly next to the floated button */
+    }
+
+    .project-card {
+        position: relative; /* Keeps elements positioned correctly within the card */
+        padding-bottom: 20px; /* Adds padding at the bottom for comfortable spacing */
+    }
+
+    
 }
