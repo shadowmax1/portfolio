@@ -1,8 +1,16 @@
 {
     "rewrites": [
       {
-        "source": "/:path",
-        "destination": "/:path.html"
+        "source": "/home",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/about",
+        "destination": "/static/about.html"
+      },
+      {
+        "source": "/contact",
+        "destination": "/static/contact.html"
       }
     ]
   }
