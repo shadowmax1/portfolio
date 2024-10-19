@@ -300,11 +300,14 @@ h1 {
 
 
 
+/* Mobile Styles */
 @media (max-width: 768px) {
+    /* Hide the sidebar on mobile */
     .sidebar {
-        display: none; /* Hide the sidebar on mobile */
+        display: none;
     }
 
+    /* Show the mobile navigation */
     .mobile-nav {
         position: fixed;
         bottom: 0;
@@ -315,9 +318,10 @@ h1 {
         justify-content: space-around;
         padding: 10px 0;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
-        z-index: 1000; /* Ensure it's on top */
+        z-index: 1000;
     }
 
+    /* Mobile nav links styles */
     .mobile-nav-links {
         list-style: none;
         display: flex;
@@ -328,20 +332,70 @@ h1 {
     }
 
     .mobile-nav-links li {
-        flex: 1; /* Evenly space out the items */
+        flex: 1;
         text-align: center;
     }
 
     .mobile-nav-links a {
         color: #ffffff;
-        font-size: 1.5rem; /* Increase icon size */
+        font-size: 1.5rem;
     }
 
-    .logo {
-        display: none; /* Hide logo on mobile */
+    /* Hide logo and sidebar copyright */
+    .logo, .sidebar-copyright {
+        display: none;
     }
 
-    .sidebar-copyright {
-        display: none; /* Optionally hide copyright on mobile */
+    /* Main content adjustments for mobile */
+    .content {
+        padding: 20px;
+    }
+
+    /* Profile Section (Adjust Image, Name, and Social Links) */
+    .profile {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 120px; /* Resize the profile image */
+        height: auto;
+        border-radius: 50%; /* Ensure it's circular */
+        margin-bottom: 15px; /* Add space below image */
+    }
+
+    /* Adjust the name, title, and social links */
+    .profile h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile .title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    /* Social links - bigger and more spaced out */
+    .social-links a {
+        font-size: 1.5rem;
+        margin: 0 10px;
+    }
+
+    /* Stats section adjustments for mobile */
+    .stats {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px; /* Add some space between the stat items */
+    }
+
+    .stat-item {
+        text-align: center;
+    }
+
+    .stat-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .stat-item p {
+        font-size: 0.9rem;
     }
 }
