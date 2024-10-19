@@ -1,4 +1,19 @@
 // Smooth Scrolling for Internal Section Links (Same Page Navigation)
+
+// Wait until the entire window is fully loaded (including images and stylesheets)
+window.onload = function() {
+    // Fade out the preloader and display the content
+    document.getElementById("preloader").style.display = "none";
+    document.querySelector(".content").style.display = "block";
+};
+
+window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        preloader.style.display = 'none';
+    }
+});
+
 document.querySelectorAll('.nav-links a').forEach(anchor => {
   const href = anchor.getAttribute('href');
 
