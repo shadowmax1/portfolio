@@ -1,17 +1,17 @@
 {
     "rewrites": [
       {
-        "source": "/home",
+        "source": "/home/",
         "destination": "/index.html"
       },
       {
-        "source": "/about",
+        "source": "/about/",
         "destination": "/static/about.html"
       },
       {
-        "source": "/contact",
+        "source": "/contact/",
         "destination": "/static/contact.html"
       }
     ]
-  }
+}
   
