@@ -3,11 +3,11 @@
   "rewrites": [
     {
       "source": "/about",
-      "destination": "/static/about.html"
+      "destination": "/about.html"
     },
     {
       "source": "/contact",
-      "destination": "/static/contact.html"
+      "destination": "/contact.html"
     },
     {
       "source": "/home",
