@@ -59,7 +59,7 @@ function countUp(elementId, start, end, duration, useFormatting = false) {
 
 // Call the countUp function for each stat with optimized duration and formatting
 window.onload = function() {
-    countUp("reputation-count", 0, 147, 1000); // StackOverflow Reputation
+    countUp("reputation-count", 0, 157, 1000); // StackOverflow Reputation
     countUp("github-count", 0, 240, 1000);     // GitHub Contributions
     countUp("subscribers-count", 0, 12200, 1000, true); // YouTube Subscribers with "k" formatting
 };
